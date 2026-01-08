@@ -1,0 +1,17 @@
+[versions]
+agp = "8.13.2"
+kotlin = "2.3.0"
+
+android-sdk-min = "24"
+android-sdk-target = "36"
+android-sdk-compile = "36"
+
+androidx-core = "1.17.0"
+
+[libraries]
+androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "androidx-core" }
+
+[plugins]
+android-library = { id = "com.android.library", version.ref = "agp" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
